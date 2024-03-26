@@ -23,7 +23,6 @@ type Props = {
 };
 
 const CourseCard: React.FC<Props> = ({ course }) => {
-	// Function to render star icons based on rating
 	const renderStars = (rating: number) => {
 		const filledStars = Math.floor(rating);
 		const halfStar = rating - filledStars >= 0.5 ? 1 : 0;
