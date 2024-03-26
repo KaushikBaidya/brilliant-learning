@@ -25,7 +25,7 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
 	};
 
 	return (
-		<div className='bg-white shadow-lg rounded-lg overflow-hidden'>
+		<div className='bg-white shadow-lg rounded-lg overflow-hidden text-sm lg:text-base'>
 			<div className='flex items-center justify-between p-5'>
 				<p className='text-gray-700'>{blog.author}</p>
 				<div className='flex items-center'>
@@ -44,7 +44,7 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
 				/>
 			</div>
 			<div className='p-6'>
-				<h3 className='text-gray-800 font-semibold text-xl mb-2'>
+				<h3 className='text-gray-800 font-semibold text-lg lg:text-xl mb-2'>
 					{blog.blogTitle}
 				</h3>
 				<p className='text-gray-600 mb-4'>
