@@ -30,7 +30,7 @@ const Blogs = (props: Props) => {
 						<BlogCard key={data.id} blog={data} />
 					))}
 				</div>
-				<div className='flex flex-wrap items-center justify-center gap-5 lg:gap-10 pb-20 text-sm'>
+				<div className='flex flex-wrap items-center justify-center gap-5 lg:gap-10 pb-20 text-sm lg:text-base'>
 					<p className='flex items-center justify-center gap-2'>
 						<span>
 							<AiOutlineMail size={20} />
