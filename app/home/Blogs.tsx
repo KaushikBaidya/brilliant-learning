@@ -10,9 +10,11 @@ const Blogs = (props: Props) => {
 	return (
 		<section className='w-full bg-gray-100'>
 			<div className='lg:w-10/12 2xl:max-w-screen-xl mx-auto h-full pb-20'>
-				<div className='flex items-center justify-between py-20'>
+				<div className='flex flex-col lg:flex-row items-center gap-y-4 justify-between py-10 lg:py-20'>
 					<div>
-						<h2 className='text-4xl font-semibold'>Latest articles</h2>
+						<h2 className='text-2xl lg:text-4xl font-semibold'>
+							Latest articles
+						</h2>
 					</div>
 					<div className='border-2 border-gray-100 hover:border-b-2 hover:border-b-purple-500 w-fit'>
 						<p className='flex items-center gap-3 font-semibold'>
@@ -23,7 +25,7 @@ const Blogs = (props: Props) => {
 						</p>
 					</div>
 				</div>
-				<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 pb-20'>
+				<div className='grid grid-cols-1 md:grid-cols-3 gap-2 lg:gap-6 px-5 lg:px-0 pb-10 lg:pb-20'>
 					{blogData.map((data) => (
 						<BlogCard key={data.id} blog={data} />
 					))}
