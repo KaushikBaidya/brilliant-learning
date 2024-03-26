@@ -37,9 +37,9 @@ const Home = () => {
 			<AboutUs />
 			<PopularCourses />
 			<PremiumExperience />
-			{/* <Banner />
+			<Banner />
 			<Trusted />
-			<Blogs /> */}
+			<Blogs />
 			{showBackToTop && (
 				<button
 					onClick={scrollToTop}
