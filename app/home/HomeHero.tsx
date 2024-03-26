@@ -44,7 +44,7 @@ const HomeHero = (props: Props) => {
 								8250+
 							</h2>
 							<hr className='bg-violet-600 w-20 lg:w-36 h-1' />
-							<h3 className='text-xl font-medium my-2 text-gray-600'>
+							<h3 className='text-sm lg:text-xl font-medium my-2 text-gray-600'>
 								Students
 							</h3>
 						</div>
@@ -60,7 +60,7 @@ const HomeHero = (props: Props) => {
 					</div>
 				</div>
 				<div className='flex items-center justify-center'>
-					<Image src={HeroImage} alt='hero section image' width={500} />
+					<Image src={HeroImage} alt='hero section image' width={600} />
 				</div>
 			</div>
 		</main>

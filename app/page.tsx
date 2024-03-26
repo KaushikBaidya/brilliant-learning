@@ -34,9 +34,9 @@ const Home = () => {
 	return (
 		<main>
 			<HomeHero />
-			{/* <AboutUs />
+			<AboutUs />
 			<PopularCourses />
-			<PremiumExperience />
+			{/* <PremiumExperience />
 			<Banner />
 			<Trusted />
 			<Blogs /> */}
