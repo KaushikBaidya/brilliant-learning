@@ -48,8 +48,8 @@ const CourseCard: React.FC<Props> = ({ course }) => {
 				<Image
 					src={course.image}
 					alt={course.courseTitle}
-					layout='fill'
-					objectFit='cover'
+					fill={true}
+					style={{ objectFit: 'cover' }}
 				/>
 			</div>
 			<div className='bg-purple-700 w-20 h-20 rounded-full flex items-center justify-center absolute right-5 top-44'>

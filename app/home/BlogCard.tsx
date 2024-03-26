@@ -40,8 +40,8 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
 				<Image
 					src={blog.image}
 					alt={blog.blogTitle}
-					layout='fill'
-					objectFit='cover'
+					fill={true}
+					style={{ objectFit: 'cover' }}
 				/>
 			</div>
 			<div className='p-6'>
