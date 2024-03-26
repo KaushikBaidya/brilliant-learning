@@ -10,7 +10,7 @@ const WhyUs: React.FC = () => {
 
 	return (
 		<main id='home' className='w-full lg:h-[50rem]'>
-			<div className='h-full w-full pb-10 flex items-center justify-center'>
+			<div className='h-full w-full pb-10 flex items-center justify-center px-5 lg:px-0'>
 				<div className='lg:w-10/12 2xl:max-w-screen-xl mx-auto grid grid-cols-1 lg:grid-cols-2 content-center'>
 					<div className='flex items-center justify-center'>
 						<Image src={Success} alt='hero section image' width={500} />
@@ -18,19 +18,21 @@ const WhyUs: React.FC = () => {
 					<div className='flex items-center'>
 						<div className='text-center md:text-left'>
 							<div className='flex items-center gap-5'>
-								<div className='w-10 h-10 bg-[#b163f1] text-white flex items-center justify-center rounded-full'>
+								<div className='w-6 lg:w-10 h-6 lg:h-10 bg-[#b163f1] text-white flex items-center justify-center rounded-full p1'>
 									<LuLightbulb size={25} />
 								</div>
-								<h3 className='text-xl font-medium'>Why you choose us?</h3>
+								<h3 className='text-sm lg:text-xl font-medium'>
+									Why you choose us?
+								</h3>
 							</div>
-							<h1 className='text-5xl lg:text-6xl text-[#0F172A] font-extrabold my-5'>
+							<h1 className='text-3xl lg:text-6xl text-[#0F172A] font-extrabold my-5'>
 								Teaching makes you productive
 							</h1>
-							<div className='pt-5'>
+							<div className='lg:pt-5 text-sm lg:text-base'>
 								<div
 									className={`bg-white shadow-lg rounded-lg my-5 p-6 transition duration-1000 ease-in-out transform`}
 								>
-									<h2 className='text-xl font-semibold mb-4'>
+									<h2 className='textlg lg:text-xl font-semibold mb-4'>
 										Our interactive platform offers diverse courses
 									</h2>
 									<p className={`${isFirstHovered ? 'block' : 'hidden'}`}>
@@ -50,7 +52,7 @@ const WhyUs: React.FC = () => {
 										setIsFirstHovered(true);
 									}}
 								>
-									<h2 className='text-xl font-semibold mb-4'>
+									<h2 className='textlg lg:text-xl font-semibold mb-4'>
 										Our interactive platform offers diverse courses
 									</h2>
 									<p className={`${isSecondHovered ? 'block' : 'hidden'}`}>
@@ -70,7 +72,7 @@ const WhyUs: React.FC = () => {
 										setIsFirstHovered(true);
 									}}
 								>
-									<h2 className='text-xl font-semibold mb-4'>
+									<h2 className='textlg lg:text-xl font-semibold mb-4'>
 										Our interactive platform offers diverse courses
 									</h2>
 									<p className={`${isThirdHovered ? 'block' : 'hidden'}`}>
