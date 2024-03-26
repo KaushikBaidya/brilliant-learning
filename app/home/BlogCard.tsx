@@ -16,7 +16,6 @@ type Props = {
 };
 
 const BlogCard: React.FC<Props> = ({ blog }) => {
-	// Function to truncate the description to 150 characters
 	const truncateDescription = (text: string, maxLength: number) => {
 		if (text.length > maxLength) {
 			return text.slice(0, maxLength) + '...';
@@ -51,13 +50,6 @@ const BlogCard: React.FC<Props> = ({ blog }) => {
 				<p className='text-gray-600 mb-4'>
 					{truncateDescription(blog.description, 150)}
 				</p>
-				{/* <div className='flex items-center justify-between'>
-					<p className='text-gray-700'>By {blog.author}</p>
-					<div className='flex items-center'>
-						<BsHeartFill className='h-5 w-5 fill-current text-gray-500 mr-1' />
-						<span className='text-gray-600'>{blog.likes} Likes</span>
-					</div>
-				</div> */}
 			</div>
 		</div>
 	);
