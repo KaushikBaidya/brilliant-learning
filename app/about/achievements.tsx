@@ -10,36 +10,38 @@ type Props = {};
 
 const Achievements = (props: Props) => {
 	return (
-		<main className='lg:w-10/12 2xl:max-w-screen-xl mx-auto pt-14 pb-28'>
+		<main className='lg:w-10/12 2xl:max-w-screen-xl mx-auto pt-7 lg:pt-14 pb-28'>
 			<div className='mb-5 text-center'>
-				<h1 className='text-5xl font-semibold'>Great achievements</h1>
+				<h1 className='text-3xl lg:text-5xl font-semibold'>
+					Great achievements
+				</h1>
 			</div>
-			<div className='flex items-center justify-center py-10'>
-				<div className='border-2 '>
-					<p className='text-right p-4'>2017</p>
-					<div className='w-72 flex flex-col items-center justify-center  text-center gap-y-10 px-10 pb-10'>
+			<div className='flex flex-wrap items-center justify-center gap-3 lg:gap-0 py-10'>
+				<div className='border-2'>
+					<p className='number text-right p-4'>2017</p>
+					<div className='w-72 flex flex-col items-center justify-center text-center gap-y-10 px-10 pb-10'>
 						<Image src={Google} alt='' width={100} />
 
 						<p>Best online platform for professional courses</p>
 					</div>
 				</div>
-				<div className='border-2 border-l-0'>
-					<p className='text-right p-4'>2018</p>
+				<div className='border-2 lg:border-l-0'>
+					<p className='number text-right p-4'>2018</p>
 					<div className='w-72 flex flex-col items-center justify-center text-center gap-y-10 px-10 pb-10'>
 						<Image src={Play} alt='' width={100} />
 						<p>Best online platform for professional courses</p>
 					</div>
 				</div>
-				<div className='border-2 border-l-0'>
-					<p className='text-right p-4'>2021</p>
-					<div className='w-72 flex flex-col items-center justify-center  text-center gap-y-10 px-10 pb-10'>
+				<div className='border-2 lg:border-l-0'>
+					<p className='number text-right p-4'>2021</p>
+					<div className='w-72 flex flex-col items-center justify-center text-center gap-y-10 px-10 pb-10'>
 						<Image src={Trophy} alt='' width={100} />
 
 						<p>Best online platform for professional courses</p>
 					</div>
 				</div>
-				<div className='border-2 border-l-0'>
-					<p className='text-right p-4'>2023</p>
+				<div className='border-2 lg:border-l-0'>
+					<p className='number text-right p-4'>2023</p>
 					<div className='w-72 flex flex-col items-center justify-center  text-center gap-y-10 px-10 pb-10'>
 						<Image src={Youtube} alt='' width={100} />
 
