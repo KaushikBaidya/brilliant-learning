@@ -57,20 +57,32 @@ const Navbar: React.FC = () => {
 						(navbarOpen ? 'flex' : 'hidden')
 					}
 				>
-					<ul className='flex flex-col lg:flex-row list-none lg:ml-auto uppercase'>
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+					<div className='flex flex-col lg:flex-row list-none lg:ml-auto uppercase'>
+						<div
+							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+							onClick={() => setNavbarOpen(!navbarOpen)}
+						>
 							<Link href='/'>Home</Link>
-						</li>
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+						</div>
+						<div
+							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+							onClick={() => setNavbarOpen(!navbarOpen)}
+						>
 							<Link href='/about'>About</Link>
-						</li>
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+						</div>
+						<div
+							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+							onClick={() => setNavbarOpen(!navbarOpen)}
+						>
 							Experience
-						</li>
-						<li className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'>
+						</div>
+						<div
+							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+							onClick={() => setNavbarOpen(!navbarOpen)}
+						>
 							Contact
-						</li>
-					</ul>
+						</div>
+					</div>
 				</div>
 				<div className='hidden lg:flex flex-grow justify-end items-center'>
 					<p className='number flex items-center gap-2'>
