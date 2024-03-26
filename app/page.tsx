@@ -43,7 +43,7 @@ const Home = () => {
 			{showBackToTop && (
 				<button
 					onClick={scrollToTop}
-					className='fixed bottom-4 right-4 bg-blue-500 border-2 border-blue-500 hover:bg-gray-900 hover:border-blue-500 text-white p-2 rounded-full'
+					className='fixed bottom-4 right-6 bg-blue-500 border-2 border-blue-500 hover:bg-gray-900 hover:border-blue-500 text-white p-2 rounded-full'
 				>
 					<MdKeyboardDoubleArrowUp size={25} />
 				</button>
