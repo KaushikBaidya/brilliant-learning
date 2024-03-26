@@ -36,8 +36,8 @@ const Home = () => {
 			<HomeHero />
 			<AboutUs />
 			<PopularCourses />
-			{/* <PremiumExperience />
-			<Banner />
+			<PremiumExperience />
+			{/* <Banner />
 			<Trusted />
 			<Blogs /> */}
 			{showBackToTop && (

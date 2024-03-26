@@ -39,13 +39,13 @@ const PopularCourses: React.FC<Props> = () => {
 						</button>
 					</div>
 				</div>
-				<div className='grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-6 px-5 lg:px-0 pb-20'>
+				<div className='grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-6 px-5 lg:px-0 pb-10 lg:pb-20'>
 					{filteredData.map((course, index) => (
 						<CourseCard key={index} course={course} />
 					))}
 				</div>
-				<div className='text-center'>
-					<p className='text-xl'>
+				<div className='text-center px-2'>
+					<p className='text-lg lg:text-xl'>
 						<span>We help you find the perfect tutor. </span>
 						<span className='border-gray-800 border-b-2 font-semibold'>
 							Explone all the courses.

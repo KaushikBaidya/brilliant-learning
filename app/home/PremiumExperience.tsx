@@ -11,21 +11,21 @@ const PremiumExperience: React.FC = () => {
 					<div className='flex items-center justify-center'>
 						<Image src={Success} alt='hero section image' width={500} />
 					</div>
-					<div className='flex items-center'>
-						<div className='text-center md:text-left'>
-							<div className='flex items-center gap-5'>
-								<div className='w-10 h-10 bg-[#b163f1] text-white flex items-center justify-center rounded-full'>
+					<div className='flex items-center px-5 lg:px-0'>
+						<div className='md:text-left'>
+							<div className='flex lg:items-center gap-5'>
+								<div className='w-6 lg:w-10 h-6 lg:h-10 bg-violet-500 text-white flex items-center justify-center rounded-full p-1'>
 									<LuLightbulb size={25} />
 								</div>
-								<h3 className='text-xl font-medium'>
+								<h3 className='text-sm lg:text-xl font-medium'>
 									Premium learning experience
 								</h3>
 							</div>
-							<h1 className='text-5xl lg:text-6xl text-[#0F172A] font-extrabold my-5'>
+							<h1 className='text-center lg:text-start text-3xl lg:text-6xl font-bold text-gray-800 pt-5'>
 								Providing amazing learning courses.
 							</h1>
 							<div className='pt-5'>
-								<div className='w-4/5 my-5 p-6 bg-gradient-to-b from-gray-100 to-gray-50 rounded-lg relative'>
+								<div className='lg:w-4/5 my-5 p-6 bg-gradient-to-b from-gray-100 to-gray-50 rounded-lg relative'>
 									<div className='w-3/4'>
 										<h2 className='text-xl font-semibold mb-4'>
 											Our interactive platform offers diverse courses
