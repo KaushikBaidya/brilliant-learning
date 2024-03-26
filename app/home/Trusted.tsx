@@ -41,12 +41,12 @@ const Trusted = (props: Props) => {
 						</div>
 					</div>
 					<div className='col-span-1'></div>
-					<div className='col-span-3 py-5 lg:py-0'>
+					<div className='col-span-3 pt-5 pb-16 lg:pb-0 lg:py-0'>
 						<CardTestimonyCarousel />
 					</div>
 				</div>
 
-				<div className='flex items-center justify-center gap-x-10 py-24'>
+				<div className='hidden lg:flex items-center justify-center gap-10 py-24'>
 					<Image src={Google} alt='' width={70} />
 					<Image src={Play} alt='' width={70} />
 					<Image src={Linkedin} alt='' width={70} />
