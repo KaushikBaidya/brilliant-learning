@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
 import CourseCard from './CourseCard';
-import data from '@/data/data';
+import courseData from '@/data/courseData';
 
 type Props = {};
 
 const AllCourses: React.FC<Props> = () => {
-	const [filteredData, setFilteredData] = useState(data);
+	const [filteredData, setFilteredData] = useState(courseData);
 
 	const filterCourses = (category: string) => {
 		if (category === 'All') {
-			setFilteredData(data);
+			setFilteredData(courseData);
 		} else {
-			const filteredCourses = data.filter(
+			const filteredCourses = courseData.filter(
 				(course) => course.category === category
 			);
 			setFilteredData(filteredCourses);
@@ -43,14 +43,6 @@ const AllCourses: React.FC<Props> = () => {
 					{filteredData.map((course, index) => (
 						<CourseCard key={index} course={course} />
 					))}
-				</div>
-				<div className='text-center px-2'>
-					<p className='text-lg lg:text-xl'>
-						<span>We help you find the perfect tutor. </span>
-						<span className='border-gray-800 border-b-2 font-semibold'>
-							Explone all the courses.
-						</span>
-					</p>
 				</div>
 			</div>
 		</section>

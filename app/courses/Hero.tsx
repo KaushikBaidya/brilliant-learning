@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import HeroImage from '@/assets/Learning-cuate.png';
+import HeroImage from '@/assets/Webinar-pana.png';
 
 const Hero = () => {
 	return (
@@ -12,7 +12,7 @@ const Hero = () => {
 								Best online courses avaiable
 							</p>
 							<h1 className='text-3xl lg:text-[3.5rem] leading-snug text-[#0F172A] font-bold'>
-								Best learning training classes.
+								Best online training classes.
 							</h1>
 						</div>
 					</div>
