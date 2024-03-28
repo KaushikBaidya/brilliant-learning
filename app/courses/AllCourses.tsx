@@ -5,15 +5,29 @@ import courseData from '@/data/courseData';
 type Props = {};
 
 const AllCourses: React.FC<Props> = () => {
-	const [filteredData, setFilteredData] = useState(courseData);
+	const [currentPage, setCurrentPage] = useState(1);
+	const [itemsPerPage] = useState(9);
+	const [filteredData, setFilteredData] = useState(
+		courseData.slice(0, itemsPerPage)
+	);
+
+	const totalPages = Math.ceil(courseData.length / itemsPerPage);
+
+	const handleClick = (pageNumber: number) => {
+		setCurrentPage(pageNumber);
+		const startIndex = (pageNumber - 1) * itemsPerPage;
+		const endIndex = startIndex + itemsPerPage;
+		setFilteredData(courseData.slice(startIndex, endIndex));
+	};
 
 	const filterCourses = (category: string) => {
+		setCurrentPage(1);
 		if (category === 'All') {
-			setFilteredData(courseData);
+			setFilteredData(courseData.slice(0, itemsPerPage));
 		} else {
-			const filteredCourses = courseData.filter(
-				(course) => course.category === category
-			);
+			const filteredCourses = courseData
+				.filter((course) => course.category === category)
+				.slice(0, itemsPerPage);
 			setFilteredData(filteredCourses);
 		}
 	};
@@ -42,6 +56,21 @@ const AllCourses: React.FC<Props> = () => {
 				<div className='grid grid-cols-2 md:grid-cols-3 gap-2 lg:gap-6 px-5 lg:px-0 pb-10 lg:pb-20'>
 					{filteredData.map((course, index) => (
 						<CourseCard key={index} course={course} />
+					))}
+				</div>
+				<div className='flex justify-center space-x-4'>
+					{Array.from({ length: totalPages }, (_, index) => (
+						<button
+							key={index}
+							onClick={() => handleClick(index + 1)}
+							className={`px-3 py-1 rounded ${
+								currentPage === index + 1
+									? 'bg-blue-500 text-white'
+									: 'bg-gray-300 text-black'
+							}`}
+						>
+							{index + 1}
+						</button>
 					))}
 				</div>
 			</div>
