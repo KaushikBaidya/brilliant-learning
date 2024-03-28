@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
 							className='w-48'
 							src={PortfolioLogo}
 							alt='logo'
-							width={2000}
+							width={200}
 							height={50}
 						/>
 					</Link>
@@ -74,7 +74,25 @@ const Navbar: React.FC = () => {
 							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
 							onClick={() => setNavbarOpen(!navbarOpen)}
 						>
-							Experience
+							<Link href='/courses'>Courses</Link>
+						</div>
+						<div
+							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+							onClick={() => setNavbarOpen(!navbarOpen)}
+						>
+							<Link href='/instructors'>Instructors</Link>
+						</div>
+						<div
+							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+							onClick={() => setNavbarOpen(!navbarOpen)}
+						>
+							<Link href='/testimonial'>Testimonial</Link>
+						</div>
+						<div
+							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+							onClick={() => setNavbarOpen(!navbarOpen)}
+						>
+							<Link href='/blogs'>Blogs</Link>
 						</div>
 						<div
 							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
