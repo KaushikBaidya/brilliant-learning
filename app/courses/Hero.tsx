@@ -11,7 +11,7 @@ const Hero = () => {
 							<p className='text-sm lg:text-lg py-2 lg:py-5'>
 								Best online courses avaiable
 							</p>
-							<h1 className='text-3xl lg:text-[3rem] leading-snug text-[#0F172A] font-bold'>
+							<h1 className='text-3xl lg:text-[3.5rem] leading-snug text-[#0F172A] font-bold'>
 								Best learning training classes.
 							</h1>
 						</div>
