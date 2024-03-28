@@ -32,7 +32,7 @@ const Navbar: React.FC = () => {
 					: 'bg-[#1e2a44] backdrop-blur-sm lg:bg-violet-700 ')
 			}
 		>
-			<div className='lg:w-10/12 2xl:max-w-screen-xl mx-auto flex flex-wrap items-center justify-around z-50 py-2'>
+			<div className='lg:w-11/12 2xl:max-w-screen-2xl mx-auto flex flex-wrap items-center justify-around z-50 py-2'>
 				<div className='w-full flex flex-grow-0 justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 					<Link href='/'>
 						<Image
