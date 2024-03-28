@@ -32,14 +32,14 @@ const Navbar: React.FC = () => {
 					: 'bg-[#1e2a44] backdrop-blur-sm lg:bg-violet-700 ')
 			}
 		>
-			<div className='lg:w-10/12 2xl:max-w-screen-xl mx-auto flex flex-wrap items-center justify-around z-50 py-2'>
+			<div className='lg:w-11/12 2xl:max-w-screen-2xl mx-auto flex flex-wrap items-center justify-around z-50 py-2'>
 				<div className='w-full flex flex-grow-0 justify-between lg:w-auto lg:static lg:block lg:justify-start'>
 					<Link href='/'>
 						<Image
 							className='w-48'
 							src={PortfolioLogo}
 							alt='logo'
-							width={2000}
+							width={200}
 							height={50}
 						/>
 					</Link>
@@ -58,24 +58,54 @@ const Navbar: React.FC = () => {
 					}
 				>
 					<div className='flex flex-col lg:flex-row list-none lg:ml-auto uppercase'>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/'>Home</Link>
-						</div>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/about'>About</Link>
-						</div>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							Experience
-						</div>
+						<Link href='/'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Home
+							</div>
+						</Link>
+						<Link href='/about'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								About
+							</div>
+						</Link>
+						<Link href='/courses'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Courses
+							</div>
+						</Link>
+						<Link href='/instructors'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Instructors
+							</div>
+						</Link>
+						<Link href='/testimonial'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Testimonial
+							</div>
+						</Link>
+						<Link href='/blogs'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Blogs
+							</div>
+						</Link>
 						<div
 							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
 							onClick={() => setNavbarOpen(!navbarOpen)}
