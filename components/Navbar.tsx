@@ -58,42 +58,54 @@ const Navbar: React.FC = () => {
 					}
 				>
 					<div className='flex flex-col lg:flex-row list-none lg:ml-auto uppercase'>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/'>Home</Link>
-						</div>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/about'>About</Link>
-						</div>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/courses'>Courses</Link>
-						</div>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/instructors'>Instructors</Link>
-						</div>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/testimonial'>Testimonial</Link>
-						</div>
-						<div
-							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
-							onClick={() => setNavbarOpen(!navbarOpen)}
-						>
-							<Link href='/blogs'>Blogs</Link>
-						</div>
+						<Link href='/'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Home
+							</div>
+						</Link>
+						<Link href='/about'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								About
+							</div>
+						</Link>
+						<Link href='/courses'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Courses
+							</div>
+						</Link>
+						<Link href='/instructors'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Instructors
+							</div>
+						</Link>
+						<Link href='/testimonial'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Testimonial
+							</div>
+						</Link>
+						<Link href='/blogs'>
+							<div
+								className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
+								onClick={() => setNavbarOpen(!navbarOpen)}
+							>
+								Blogs
+							</div>
+						</Link>
 						<div
 							className='px-4 border-transparent border-b-4 hover:border-blue-300 py-2 font-normal cursor-pointer'
 							onClick={() => setNavbarOpen(!navbarOpen)}
